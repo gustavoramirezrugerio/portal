@@ -225,17 +225,17 @@ fieldset[disabled] .btn-xl.active
 
 
 .logo_nav
-  background-image url(../../../assets/development/imagenes/logo_mini.png)
+  background-image url(../../assets/imagenes/logo_mini.png)
   background-repeat no-repeat
   background-size 100%
   width 80px
   height 35px
   display block
-  *background-image url(../../../assets/development/imagenes/logo_mini.png)
+  *background-image url(../../assets/imagenes/logo_mini.png)
 
 
 header
-  background-image url(../../../assets/development/imagenes/header-bg.jpg)
+  background-image url(../../assets/imagenes/header-bg.jpg)
   background-position center center
   background-repeat none
   -webkit-background-size cover
@@ -423,7 +423,7 @@ aside
 
 section#contact
   background-color $colorBlanco
-  //background-image url(../../../assets/development/imagenes/map-image.png)
+  //background-image url(../../assets/imagenes/map-image.png)
   background-position center
   background-repeat no-repeat
   .section-heading
@@ -627,7 +627,7 @@ img
 /*.link-secundario*/
 
 .Cultura-imagen1
-  background-image url(../../../assets/development/imagenes/cultura/imagen1.png)
+  background-image url(../../assets/imagenes/cultura/imagen1.png)
   background-position center center
   background-repeat none
   -webkit-background-size cover
@@ -638,7 +638,7 @@ img
   padding-bottom 30px
 
 .Cultura-imagen2
-  background-image url(../../../assets/development/imagenes/cultura/imagen1.png)
+  background-image url(../../assets/imagenes/cultura/imagen1.png)
   background-position center center
   background-repeat none
   -webkit-background-size cover
@@ -649,7 +649,7 @@ img
   padding-bottom 30px
 
 .Cultura-imagen3
-  background-image url(../../../assets/development/imagenes/cultura/imagen1.png)
+  background-image url(../../assets/imagenes/cultura/imagen1.png)
   background-position center center
   background-repeat none
   -webkit-background-size cover
@@ -675,11 +675,11 @@ img
 
 @media screen and (max-width: 990px )
   .logo_nav
-    background-image url(../../../assets/development/imagenes/logo_mini2.png)
+    background-image url(../../assets/imagenes/logo_mini2.png)
     background-repeat no-repeat
     background-size 100%
     width 20px
     height 35px
     display block
-    *background-image url(../../../assets/development/imagenes/logo_mini.png)
+    *background-image url(../../assets/imagenes/logo_mini.png)
 
