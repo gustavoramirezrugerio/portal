@@ -269,8 +269,8 @@ section
 	background #ccc
 	padding 30px
 .contactar
-	background #616161
-	color #fff
+	background #ffffff
+	color #000
 #portfolio
   .portfolio-item
     right 0
