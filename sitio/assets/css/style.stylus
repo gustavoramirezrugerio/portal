@@ -260,7 +260,6 @@ section
       text-transform none
       font-family $fuenteDroid
       font-size 16px
-      font-style italic
       font-weight 400
 
 .service-heading
@@ -427,10 +426,23 @@ aside
       margin 50px auto
 
 .back
-  background-image url(../../assets/imagenes/documentacion/person.png)
+  background-image url(../../assets/imagenes/documentacion/person.jpg)
   background-position center
-.pruebabackicon
-	background-image url(../../assets/imagenes/consultoria/colors.svg)
+  
+.back-icon-outsourcing
+	background-image url(../../assets/imagenes/consultoria/outsourcing.svg)
+	background-size cover
+.back-icon-ingenieria
+	background-image url(../../assets/imagenes/consultoria/ingenieria.svg)
+	background-size cover
+.back-icon-fabrica
+	background-image url(../../assets/imagenes/consultoria/fabrica.svg)
+	background-size cover
+.back-icon-business
+	background-image url(../../assets/imagenes/consultoria/business.svg)
+	background-size cover
+.back-icon-proyectos
+	background-image url(../../assets/imagenes/consultoria/proyectos.svg)
 	background-size cover
 	
 section#contact
@@ -638,7 +650,7 @@ img
 /*.link-secundario*/
 
 .Cultura-imagen1
-  background-image url(../../assets/imagenes/cultura/imagen1.png)
+  background-image url(../../assets/imagenes/cultura/trabajo_equipo.png)
   background-position center center
   background-repeat none
   -webkit-background-size cover
@@ -669,6 +681,49 @@ img
   -o-background-size cover
   padding-top 250px
   padding-bottom 30px
+
+/*Iconos Consultoría*/
+@font-face
+  font-family 'iconosxpertys'
+  src url('fonts/iconosxpertys.eot?-6dunzf')
+  src url('fonts/iconosxpertys.eot?#iefix-6dunzf') format('embedded-opentype'),
+ url('fonts/iconosxpertys.ttf?-6dunzf') format('truetype'),
+		url('fonts/iconosxpertys.woff?-6dunzf') format('woff'),
+		url('fonts/iconosxpertys.svg?-6dunzf#iconosxpertys') format('svg')
+  font-weight normal
+  font-style normal
+
+[class^="ixs-"], [class*=" ixs-"]
+  font-family 'iconosxpertys'
+  speak none
+  font-style normal
+  font-weight normal
+  font-variant normal
+  text-transform none
+  line-height 1
+  color white
+  -webkit-font-smoothing antialiased
+  -moz-osx-font-smoothing grayscale
+
+.ixs-icobusiness
+  &:before
+    content "\e600"
+
+.ixs-icofabrica
+  &:before
+    content "\e601"
+
+.ixs-icoingenieria
+  &:before
+    content "\e602"
+
+.ixs-icooutsoursing
+  &:before
+    content "\e603"
+
+.ixs-icoproyectos
+  &:before
+    content "\e604"
 
 
 
