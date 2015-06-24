@@ -57,13 +57,13 @@ a.active
   outline 0
 
 a
-  color $colorPrincipal
+  color $textoMate
 
 a:hover,
 a:focus,
 a:active,
 a.active
-  color $enlaces
+  color $textoMate
 
 
 h1,
@@ -235,7 +235,7 @@ fieldset[disabled] .btn-xl.active
 
 
 header
-  background-image url(../../assets/imagenes/header-bg.jpg)
+  background-image url(../../assets/imagenes/header-bg.png)
   background-position center center
   background-repeat none
   -webkit-background-size cover
@@ -244,7 +244,7 @@ header
   -o-background-size cover
   margin-top 50px
   padding-top 450px
-  padding-bottom 50px
+  padding-bottom 150px
 
 
 section
@@ -426,6 +426,13 @@ aside
     img
       margin 50px auto
 
+.back
+  background-image url(../../assets/imagenes/documentacion/person.png)
+  background-position center
+.pruebabackicon
+	background-image url(../../assets/imagenes/consultoria/colors.svg)
+	background-size cover
+	
 section#contact
   background-color $colorBlanco
   //background-image url(../../assets/imagenes/map-image.png)
@@ -622,13 +629,12 @@ img
   bottom 0
   left 0
   width 5%
-  height 100px
   font-size 20px
-  color #fff
+  color #000
   text-shadow 0 1px 2px rgba(0, 0, 0, 0)
-  opacity .2
-  background-color #000
-
+  opacity 1
+ 
+	
 /*.link-secundario*/
 
 .Cultura-imagen1
@@ -639,8 +645,8 @@ img
   -moz-background-size cover
   background-size cover
   -o-background-size cover
-  padding-top 250px
-  padding-bottom 30px
+  padding-top 100px
+  padding-bottom -150px
 
 .Cultura-imagen2
   background-image url(../../assets/imagenes/cultura/imagen1.png)
