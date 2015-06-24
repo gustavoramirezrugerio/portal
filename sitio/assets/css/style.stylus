@@ -266,7 +266,12 @@ section
 .service-heading
   margin 15px 0
   text-transform none
-
+#footer
+	background #ccc
+	padding 30px
+.contactar
+	background #616161
+	color #fff
 #portfolio
   .portfolio-item
     right 0
