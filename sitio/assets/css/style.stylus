@@ -661,7 +661,7 @@ img
   padding-bottom -150px
 
 .Cultura-imagen2
-  background-image url(../../assets/imagenes/cultura/imagen1.png)
+  background-image url(../../assets/imagenes/cultura/trabajo_equipo1.png)
   background-position center center
   background-repeat none
   -webkit-background-size cover
