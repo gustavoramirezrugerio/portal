@@ -7,16 +7,8 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-
-    $( ".ocultarElmentosInicio" ).hide();
-  });
-
-
-
-
-
-
-
+    //$( ".ocultarElmentosInicio" ).hide();
+});
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
@@ -28,7 +20,6 @@ $('.navbar-collapse ul li a').click(function() {
 });
 
 $(document).ready(function(){
-
     $('.inferior').affix({
           offset: {
             top: $('header').height()
@@ -40,18 +31,12 @@ $(document).ready(function(){
             top: 200
           }
     });
-
-
-
-    $( "#elementoOcultarMostrar" ).hide();
+});
+  $( "#elementoOcultarMostrar" ).hide();
     $("#ocultarMostrar").click(function () {
         $('#elementoOcultarMostrar').toggle();
-     });
-});
-
-
-
-  /******  webSoportada    ******/
+  });
+  /******  webSoportada    ******
   $("#webSoportada").mouseover(function(event){
     $( "#contenedor_webSoportada" ).show();
      $("#txt_webSoportada").addClass("resaltar");
@@ -62,7 +47,7 @@ $(document).ready(function(){
    $("#txt_webSoportada").removeClass("resaltar");
   });
 
-  /******  arquitecturas    ******/
+  /******  arquitecturas    ******
   $("#arquitecturas").mouseover(function(event){
     $( "#contenedor_arquitecturas" ).show();
      $("#txt_Arquitecturas").addClass("resaltar");
@@ -72,8 +57,4 @@ $(document).ready(function(){
     $( "#contenedor_arquitecturas" ).hide();
    $("#txt_Arquitecturas").removeClass("resaltar");
   });
-
-
-
-
-
+  /******  next    ******/
