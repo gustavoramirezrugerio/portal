@@ -7,7 +7,15 @@ $(function() {
         }, 1500, 'easeInOutExpo');
         event.preventDefault();
     });
-});
+
+    $( ".ocultarElmentosInicio" ).hide();
+  });
+
+
+
+
+
+
 
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -40,3 +48,32 @@ $(document).ready(function(){
         $('#elementoOcultarMostrar').toggle();
      });
 });
+
+
+
+  /******  webSoportada    ******/
+  $("#webSoportada").mouseover(function(event){
+    $( "#contenedor_webSoportada" ).show();
+     $("#txt_webSoportada").addClass("resaltar");
+  });
+
+  $("#webSoportada").mouseout(function(event){
+    $( "#contenedor_webSoportada" ).hide();
+   $("#txt_webSoportada").removeClass("resaltar");
+  });
+
+  /******  arquitecturas    ******/
+  $("#arquitecturas").mouseover(function(event){
+    $( "#contenedor_arquitecturas" ).show();
+     $("#txt_Arquitecturas").addClass("resaltar");
+  });
+
+  $("#arquitecturas").mouseout(function(event){
+    $( "#contenedor_arquitecturas" ).hide();
+   $("#txt_Arquitecturas").removeClass("resaltar");
+  });
+
+
+
+
+

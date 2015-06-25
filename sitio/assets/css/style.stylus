@@ -428,7 +428,7 @@ aside
 .back
   background-image url(../../assets/imagenes/documentacion/person.jpg)
   background-position center
-  
+
 .back-icon-outsourcing
 	background-image url(../../assets/imagenes/consultoria/outsourcing.svg)
 	background-size cover
@@ -444,7 +444,7 @@ aside
 .back-icon-proyectos
 	background-image url(../../assets/imagenes/consultoria/proyectos.svg)
 	background-size cover
-	
+
 section#contact
   background-color $colorBlanco
   //background-image url(../../assets/imagenes/map-image.png)
@@ -640,13 +640,21 @@ img
 .carousel-control
   bottom 0
   left 0
-  width 5%
+  width 0%
   font-size 20px
   color #000
   text-shadow 0 1px 2px rgba(0, 0, 0, 0)
   opacity 1
- 
-	
+.carousel-control:hover
+  color $barraNavegacion
+
+
+.resaltar
+  background-color #ff8800
+  font-weight bold
+
+
+
 /*.link-secundario*/
 
 .Cultura-imagen1
@@ -731,6 +739,8 @@ img
 ********************  RESPONSIVE   *********************
 ********************************************************/
 @media screen and (max-width: 500px )
+
+
   header
     padding-top 5px
     padding-bottom 350px
@@ -744,4 +754,12 @@ img
     height 35px
     display block
     *background-image url(../../assets/imagenes/logo_mini.png)
+
+  .carousel-control,
+  .glyphicon-chevron-left
+    margin-left 20px
+
+  .carousel-control,
+  .glyphicon-chevron-right
+    margin-right 20px
 
