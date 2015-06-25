@@ -15,7 +15,7 @@ $colorBlanco = #ffffff//Blanco
 $variables4 = #9596F0 // Color lila
 $textoMenu = #ffffff
 $transparente = transparent
-$barraNavegacion = #455A64 // gris claro
+$barraNavegacion = #455A64 // gris medio
 //opacidad
 $opacidadPortafolio = rgba(254,209,54, .9)
 $opacidadRevisar = rgba(255,255,255,.02)
@@ -85,6 +85,10 @@ h6
 .bg-darkest-gray
   background-color $colorBlanco
 
+.btn
+  color $colorBlanco
+  background-color $barraNavegacion
+  
 .btn-primary
   border-color $colorPrincipal
   text-transform uppercase
