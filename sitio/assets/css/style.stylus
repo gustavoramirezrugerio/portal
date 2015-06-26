@@ -82,6 +82,9 @@ h6
 .bg-light-gray
   background-color #EEEEEE
 
+.bg-light-footer
+  background-color $barraNavegacion
+
 .bg-darkest-gray
   background-color $colorBlanco
 
@@ -262,7 +265,7 @@ header
   -moz-background-size cover
   background-size cover
   -o-background-size cover
-  margin-top 50px
+  margin-top 0px
   padding-top 250px
   padding-bottom 150px
 
@@ -274,9 +277,10 @@ header
   -moz-background-size cover
   background-size cover
   -o-background-size cover
-  margin-top 50px
+  margin-top 0px
   padding-top 250px
   padding-bottom 150px
+  
 #slider3
   background-image url(../../assets/imagenes/header-bg_c.png)
   background-position center center
@@ -285,7 +289,7 @@ header
   -moz-background-size cover
   background-size cover
   -o-background-size cover
-  margin-top 50px
+  margin-top 0px
   padding-top 250px
   padding-bottom 150px
 
@@ -309,8 +313,9 @@ section
   margin 15px 0
   text-transform none
 #footer
-	background #ccc
-	padding 30px
+	background $barraNavegacion
+	padding 5px
+	text-align center
 .contactar
 	background #ffffff
 	color #000
@@ -654,8 +659,7 @@ img
 
 
 .navbar-default
-  background-color $barraNavegacion
-
+	background-image url(../../assets/imagenes/nav_bg.png)
 .inferior
   background $transparent
   height 50px  /*alto del div*/
