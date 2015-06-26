@@ -88,7 +88,7 @@ h6
 .btn
   color $colorBlanco
   background-color $barraNavegacion
-  
+
 .btn-primary
   border-color $colorPrincipal
   text-transform uppercase
@@ -248,6 +248,45 @@ header
   -o-background-size cover
   margin-top 50px
   padding-top 450px
+  padding-bottom 150px
+
+.carousel-inner
+  height: 100%;
+  //height: 700px;
+
+#slider1
+  background-image url(../../assets/imagenes/header-bg.png)
+  background-position center center
+  background-repeat none
+  -webkit-background-size cover
+  -moz-background-size cover
+  background-size cover
+  -o-background-size cover
+  margin-top 50px
+  padding-top 250px
+  padding-bottom 150px
+
+#slider2
+  background-image url(../../assets/imagenes/header-bg_b.png)
+  background-position center center
+  background-repeat none
+  -webkit-background-size cover
+  -moz-background-size cover
+  background-size cover
+  -o-background-size cover
+  margin-top 50px
+  padding-top 250px
+  padding-bottom 150px
+#slider3
+  background-image url(../../assets/imagenes/header-bg_c.png)
+  background-position center center
+  background-repeat none
+  -webkit-background-size cover
+  -moz-background-size cover
+  background-size cover
+  -o-background-size cover
+  margin-top 50px
+  padding-top 250px
   padding-bottom 150px
 
 
