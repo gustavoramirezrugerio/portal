@@ -1,4 +1,3 @@
- //Fuentes
 $fuenteRobot = "Roboto Slab","Helvetica Neue",Helvetica,Arial,sans-serif
 $fuenteMontserrat = Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif
 $fuenteDroid = "Droid Serif","Helvetica Neue",Helvetica,Arial,sans-serif
@@ -64,6 +63,7 @@ a:focus,
 a:active,
 a.active
   color $textoMate
+
 
 
 h1,
@@ -184,6 +184,7 @@ fieldset[disabled] .btn-xl.active
 .navbar-default
   border-color transparent
   background-color transparent //INICIO BARRA DE NAVEGACION
+  background-image url(../../assets/imagenes/menu.png)
   .navbar-brand
     font-family $fuenteKaushan
     color $colorPrincipal
@@ -208,6 +209,7 @@ fieldset[disabled] .btn-xl.active
         border-radius 0
         color $colorBlanco
         background-color $colorPrincipal
+        background-image url(../../assets/imagenes/menu.png)
 
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -227,7 +229,7 @@ fieldset[disabled] .btn-xl.active
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus
   color $colorBlanco
-  background-color $overSeleccionado
+  background-color transparent
 
 
 
@@ -280,7 +282,7 @@ header
   margin-top 0px
   padding-top 250px
   padding-bottom 150px
-  
+
 #slider3
   background-image url(../../assets/imagenes/header-bg_c.png)
   background-position center center
@@ -313,12 +315,12 @@ section
   margin 15px 0
   text-transform none
 #footer
-	background $barraNavegacion
-	padding 5px
-	text-align center
+  background $barraNavegacion
+  padding 5px
+  text-align center
 .contactar
-	background #ffffff
-	color #000
+  background #ffffff
+  color #000
 #portfolio
   .portfolio-item
     right 0
@@ -478,20 +480,20 @@ aside
   background-position center
 
 .back-icon-outsourcing
-	background-image url(../../assets/imagenes/consultoria/outsourcing.svg)
-	background-size cover
+  background-image url(../../assets/imagenes/consultoria/outsourcing.svg)
+  background-size cover
 .back-icon-ingenieria
-	background-image url(../../assets/imagenes/consultoria/ingenieria.svg)
-	background-size cover
+  background-image url(../../assets/imagenes/consultoria/ingenieria.svg)
+  background-size cover
 .back-icon-fabrica
-	background-image url(../../assets/imagenes/consultoria/fabrica.svg)
-	background-size cover
+  background-image url(../../assets/imagenes/consultoria/fabrica.svg)
+  background-size cover
 .back-icon-business
-	background-image url(../../assets/imagenes/consultoria/business.svg)
-	background-size cover
+  background-image url(../../assets/imagenes/consultoria/business.svg)
+  background-size cover
 .back-icon-proyectos
-	background-image url(../../assets/imagenes/consultoria/proyectos.svg)
-	background-size cover
+  background-image url(../../assets/imagenes/consultoria/proyectos.svg)
+  background-size cover
 
 section#contact
   background-color $colorBlanco
@@ -589,6 +591,8 @@ ul.social-buttons li a:active
 .btn:active:focus
   outline 0
 
+
+
 .portfolio-modal
   .modal-content
     padding 100px 0
@@ -618,10 +622,9 @@ ul.social-buttons li a:active
   .close-modal
     position absolute
     top 25px
-    right 25px
-    width 75px
-    height 75px
-    background-color transparent
+    //right 25px
+    width 45px
+    height 45px
     background-color $colorPrincipal
     cursor pointer
     &:hover
@@ -629,8 +632,8 @@ ul.social-buttons li a:active
     .lr
       z-index 1051
       width 1px
-      height 75px
-      margin-left 35px
+      height 45px
+      margin-left 25px
       background-color $colorBlanco
       -webkit-transform rotate(45deg)
       -ms-transform rotate(45deg)
@@ -638,7 +641,7 @@ ul.social-buttons li a:active
       .rl
         z-index 1052
         width 1px
-        height 75px
+        height 45px
         background-color $colorBlanco
         -webkit-transform rotate(90deg)
         -ms-transform rotate(90deg)
@@ -659,7 +662,7 @@ img
 
 
 .navbar-default
-	background-image url(../../assets/imagenes/nav_bg.png)
+  background-image url(../../assets/imagenes/nav_bg.png)
 .inferior
   background $transparent
   height 50px  /*alto del div*/
@@ -681,8 +684,6 @@ img
   align-items center
   height 400px
 
-.carousel-inner
-  height 400px
 
 .carousel-control
   bottom 0
@@ -743,8 +744,8 @@ img
   src url('fonts/iconosxpertys.eot?-6dunzf')
   src url('fonts/iconosxpertys.eot?#iefix-6dunzf') format('embedded-opentype'),
  url('fonts/iconosxpertys.ttf?-6dunzf') format('truetype'),
-		url('fonts/iconosxpertys.woff?-6dunzf') format('woff'),
-		url('fonts/iconosxpertys.svg?-6dunzf#iconosxpertys') format('svg')
+    url('fonts/iconosxpertys.woff?-6dunzf') format('woff'),
+    url('fonts/iconosxpertys.svg?-6dunzf#iconosxpertys') format('svg')
   font-weight normal
   font-style normal
 
@@ -780,13 +781,21 @@ img
   &:before
     content "\e604"
 
+///VENTANA MODAL
+
+.modal-content
+  background-image url(../../assets/imagenes/modal.png)
+  background-repeat repeat-x
+  background-color #f00
+
+.modal-body
+  background-color #fff
 
 
 /*******************************************************
 ********************  RESPONSIVE   *********************
 ********************************************************/
 @media screen and (max-width: 500px )
-
 
   header
     padding-top 5px
@@ -809,4 +818,3 @@ img
   .carousel-control,
   .glyphicon-chevron-right
     margin-right 20px
-

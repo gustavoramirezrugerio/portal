@@ -162,6 +162,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
   border-color: transparent;
   background-color: transparent;
+  background-image: url("../../assets/imagenes/menu.png");
 }
 .navbar-default .navbar-brand {
   font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
@@ -188,6 +189,7 @@ fieldset[disabled] .btn-xl.active {
   border-radius: 0;
   color: #fff;
   background-color: #0097a7;
+  background-image: url("../../assets/imagenes/menu.png");
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
@@ -207,7 +209,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
   color: #fff;
-  background-color: #408696;
+  background-color: transparent;
 }
 .logo_nav {
   background-image: url("../../assets/imagenes/logo_mini.png");
@@ -624,10 +626,8 @@ ul.social-buttons li a {
 .portfolio-modal .close-modal {
   position: absolute;
   top: 25px;
-  right: 25px;
-  width: 75px;
-  height: 75px;
-  background-color: transparent;
+  width: 45px;
+  height: 45px;
   background-color: #0097a7;
   cursor: pointer;
 }
@@ -637,8 +637,8 @@ ul.social-buttons li a {
 .portfolio-modal .close-modal .lr {
   z-index: 1051;
   width: 1px;
-  height: 75px;
-  margin-left: 35px;
+  height: 45px;
+  margin-left: 25px;
   background-color: #fff;
   -webkit-transform: rotate(45deg);
   -ms-transform: rotate(45deg);
@@ -647,7 +647,7 @@ ul.social-buttons li a {
 .portfolio-modal .close-modal .lr .rl {
   z-index: 1052;
   width: 1px;
-  height: 75px;
+  height: 45px;
   background-color: #fff;
   -webkit-transform: rotate(90deg);
   -ms-transform: rotate(90deg);
@@ -688,9 +688,6 @@ img::-moz-selection {
   color: #000;
   display: flex;
   align-items: center;
-  height: 400px;
-}
-.carousel-inner {
   height: 400px;
 }
 .carousel-control {
@@ -778,6 +775,14 @@ img::-moz-selection {
 }
 .ixs-icoproyectos:before {
   content: "\e604";
+}
+.modal-content {
+  background-image: url("../../assets/imagenes/modal.png");
+  background-repeat: repeat-x;
+  background-color: #f00;
+}
+.modal-body {
+  background-color: #fff;
 }
 /*******************************************************
 ********************  RESPONSIVE   *********************
