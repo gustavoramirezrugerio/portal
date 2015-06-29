@@ -35,12 +35,23 @@ body
 .ss-container
   padding-bottom: 0px
 
+.fa-facebook
+	color $textoMenu
 
 .text-muted
   color $textoMate
 
 .text-primary
   color $colorPrincipal
+
+
+
+.navbar-default
+	.navbar-nav>.active>a
+		.navbar-default
+			.navbar-nav>.active>a:hover
+				.navbar-default
+						background-color non
 
 p
   font-size 14px
