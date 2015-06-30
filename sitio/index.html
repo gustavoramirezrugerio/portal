@@ -59,8 +59,8 @@
                     <li><a class="page-scroll" href="#clientes">Clientes</a></li>
                     <li><a class="page-scroll" href="#documentacion">Documentación</a></li>
                     <!--li><a class="page-scroll" href="#contact">Contacto</a></li-->
-                    <li><a class="page-scroll" href="#contacto"><i class="fa fa-phone fa-2x"></i></a></li>
-                    <li><a class="page-scroll" href="#contacto1"><i class="fa fa-map-marker fa-2x"></i></a></li>
+                    <li id="iconPhone" ><a class="page-scroll" href="#contacto"><i class="fa fa-phone fa-2x"></i></a></li>
+                    <li id="">          <a class="page-scroll " href="#geolocalizacion"><i class="fa fa-map-marker fa-2x iconMap "></i></a></li>
 
                 </ul>
             </div>
@@ -128,7 +128,7 @@
                                 <div class="col-md-8 ">
                                     <h3>Misión</h3>
                                     Desarrollar aplicaciones empresariales innovadoras, que contribuyan a optimizar los procesos, reduzca los tiempos de respuesta a los clientes internos/externos y generen rentabilidad a largo plazo en el negocio de nuestros clientes.<br><br>
-                                    <div class="Cultura-imagen1"></div>
+                                    <img src="assets/imagenes/cultura/trabajo_equipo.png" alt="">
                                     <h3>Visión</h3>
                                     Ser colaboradores en soluciones estratégicas por medio de tecnologías de información de vanguardia en México y el resto de países de Latinoamérica.<br><br>
                                 </div>
@@ -314,7 +314,7 @@
                 <div id="webSoportada" class="col-md-2 col-sm-6 portfolio-item" >
                     <a href="#tecnologia-webSoportada" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover"></div>
-                        <img src="assets/imagenes/grey.gif" data-original="assets/imagenes/tecnologia/web.svg"  class="img-responsive" alt="" />
+                        <img src="assets/imagenes/grey.gif" data-original="assets/imagenes/tecnologia/web.svg"  class="img-responsive imagen-custom" alt="" />
                     </a>
                     <div class="portfolio-caption">
                        <a href="#tecnologia-webSoportada"  data-toggle="modal">
@@ -482,38 +482,99 @@
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading "> <span class="text-muted"> Contacto </span> </h2>
                     <h3 class="section-subheading text-muted">Xpertys cuenta con profesionales con experiencia en levantamiento de requerimientos, análisis, diseño, construcción e implementación, usando las mejores prácticas y metodologías para este tipo de proyectos</h3>
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                        <div class="col-md-1">
+                        </div>
 
+                        <div id="iconPhoneEnlace" class="col-md-2">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-phone fa-stack-2x"></i>
+                            </span>
 
+                        </div>
 
-                     	<div class="col-md-1">
-                    	</div>
                         <div class="col-md-2">
                         <span class="fa-stack fa-4x">
-                            <i class="fa fa-phone fa-stack-2x"></i>
+                            <i class="fa fa-map-marker fa-stack-2x iconMap"></i>
                         </span>
-                    	</div>
-                        <div class="col-md-2">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-map-marker fa-stack-2x"></i>
-                        </span>
-                    	</div>
-                        <div class="col-md-2">
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-envelope-o fa-stack-2x"></i>
-                        </span>
-                    	</div>
+                        </div>
+                        <div id="icon-contacto"  class="col-md-2">
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-envelope-o fa-stack-2x"></i>
+                            </span>
+                        </div>
                         <div class="col-md-2">
                         <span class="fa-stack fa-4x">
                             <a href="https://www.facebook.com/Xpertys" target="_blank"><i class="fa fa-facebook fa-stack-2x"></i></a>
                         </span>
-                    	</div>
+                        </div>
                         <div class="col-md-2">
                         <span class="fa-stack fa-4x">
                             <a href="https://plus.google.com/u/0/104742733854123764188/about" target="_blank"><i class="fa fa-google-plus fa-stack-2x"></i></a>
                         </span>
-                    	</div>
+                        </div>
                         <div class="col-md-1">
-                    	</div>
+                        </div>
+
+                        <div id="contactoTelefono">
+                            <div id="form-telefono"  class="row elementoOcultarMostrar">
+                                <div class="col-lg-12">
+                                    <h1>Numero telofonico</h1>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div id="geolocalizacion">
+                            <div id="form-map"  class="row elementoOcultarMostrar">
+                                <div class="col-lg-12">
+                                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d941.5865379256161!2d-99.62637221552028!3d19.267307398260506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85cd8bae683c2073%3A0x94983f4fa1cfaa56!2zTWV0ZXBlYywgTcOpeC4!5e0!3m2!1ses-419!2smx!4v1435641204974" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                                </div>
+                            </div>
+                        </div>
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+
+                        <div id="form-contacto"  class="row elementoOcultarMostrar">
+                            <div class="col-lg-12">
+                                <form name="sentMessage" id="contactForm" novalidate>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Su nombre *" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="email" class="form-control" placeholder="Su email *" id="email" required data-validation-required-message="Por favor ingrese su email.">
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group">
+                                                <textarea rows="10" class="form-control" placeholder="Su mensaje *" id="message" required data-validation-required-message="Por favor ingrese su mensaje."></textarea>
+                                                <p class="help-block text-danger"></p>
+                                            </div>
+                                        </div>
+                                        <div class="clearfix"></div>
+                                        <div class="col-lg-12 text-center">
+                                            <div id="success"></div>
+                                            <button type="submit" class="btn btn-xl">Enviar mensaje</button>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+
+
 
                 </div><p>&nbsp;</p><p>&nbsp;</p><p>&nbsp;</p>
             </div>

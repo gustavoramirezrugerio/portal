@@ -58,3 +58,32 @@ $(document).ready(function(){
    $("#txt_Arquitecturas").removeClass("resaltar");
   });
   /******  next    ******/
+
+
+  $("#contacto").mouseover(function(event){
+    $( "#iconPhone" ).hide();
+  });
+  $("#contacto").mouseout(function(event){
+    $( "#iconPhone" ).show();
+  });
+
+
+  $('#form-contacto').hide();
+  $('#icon-contacto').click(function() {
+    $('#form-contacto').toggle();
+  });
+
+
+  $('#form-map').hide();
+  $('.iconMap').click(function() {
+    $('#form-map').toggle();
+  });
+
+
+  $('#form-telefono').hide();
+  $('#iconPhoneEnlace').click(function() {
+    $('#form-telefono').toggle();
+  });
+
+
+
