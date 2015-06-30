@@ -58,30 +58,37 @@ $(document).ready(function(){
    $("#txt_Arquitecturas").removeClass("resaltar");
   });
   /******  next    ******/
+  function ocultarElementos(){
 
+
+    $('#form-contacto').hide();
+    $('#form-telefono').hide();
+    $('#form-map').hide();
+  }
+
+  ocultarElementos();
 
   $("#contacto").mouseover(function(event){
+    //ocultarElementos();
     $( "#iconPhone" ).hide();
   });
+
   $("#contacto").mouseout(function(event){
     $( "#iconPhone" ).show();
   });
 
 
-  $('#form-contacto').hide();
+
   $('#icon-contacto').click(function() {
+    ocultarElementos();
     $('#form-contacto').toggle();
   });
-
-
-  $('#form-map').hide();
   $('.iconMap').click(function() {
+    ocultarElementos();
     $('#form-map').toggle();
   });
-
-
-  $('#form-telefono').hide();
   $('#iconPhoneEnlace').click(function() {
+    ocultarElementos();
     $('#form-telefono').toggle();
   });
 
