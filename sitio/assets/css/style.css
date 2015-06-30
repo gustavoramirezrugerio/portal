@@ -298,6 +298,8 @@ section h3.section-subheading {
 .contactar {
   background: #fff;
   color: #000;
+  border-width:2px;
+  border-color:#435963;
 }
 #portfolio .portfolio-item {
   right: 0;
@@ -632,9 +634,9 @@ ul.social-buttons li a {
   position: absolute;
   top: 2%;
   left: 2%;
-  background-image: url("../../assets/imagenes/cerrar.png");
-  width: 115px;
-  height: 115px;
+  background-image: url("../../assets/imagenes/cerrar.svg");
+  width: 35px;
+  height: 35px;
   cursor: pointer;
   position:fixed;
   z-index: 2;
@@ -664,7 +666,7 @@ img::-moz-selection {
   height: 50px;
   z-index: 100;
   position: fixed;
-  bottom: 0;
+  bottom: 0px;
   right: 0;
   width: 100%;
 }
@@ -785,7 +787,7 @@ img::-moz-selection {
 .navbar-default .navbar-nav>.active>a,
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
-  color: #555;
+  color: #FFF;
   background-color: transparent;
 }
 
@@ -798,6 +800,9 @@ img::-moz-selection {
     padding-top: 5px;
     padding-bottom: 350px;
   }
+.inferior {
+  bottom: 40px;
+}
 }
 @media screen and (max-width: 990px) {
   .logo_nav {
@@ -817,6 +822,16 @@ img::-moz-selection {
   .glyphicon-chevron-right {
     margin-right: 20px;
   }
+  .inferior {
+  bottom: 40px;
+}
 }
 
 
+button, input, optgroup, select, textarea {
+  margin: 10px;
+}
+.btn:hover, .btn:focus {
+  color: #FFF;
+  background-color:#648493;
+}

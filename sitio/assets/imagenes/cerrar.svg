@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 595.3 254.5" style="enable-background:new 0 0 595.3 254.5;" xml:space="preserve">
-<style type="text/css">
-	.st0{fill:#5D5D5D;}
-</style>
-<ellipse id="XMLID_14_" class="st0" cx="339.2" cy="127.2" rx="111" ry="22.1"/>
-<circle id="XMLID_15_" class="st0" cx="132.7" cy="124" r="114.9"/>
+	 width="35px" height="35px" viewBox="0 0 35 35" enable-background="new 0 0 35 35" xml:space="preserve">
+<path fill="#FEFEFE" d="M7.112,15.687c9.305,0,16.886-0.015,24.467,0.013c1.556,0.006,3.385-0.581,3.358,2.26
+	c-0.027,2.862-1.91,2.18-3.422,2.189c-7.57,0.041-15.14,0.019-24.012,0.019c3.929,3.898,7.046,6.93,10.085,10.039
+	c1.068,1.092,2.889,2.069,0.865,4.019c-1.725,1.662-2.637,0.281-3.65-0.724c-4.493-4.452-8.928-8.963-13.44-13.395
+	c-1.365-1.341-2.084-2.36-0.304-4.067c4.833-4.634,9.501-9.44,14.237-14.176c0.925-0.925,1.715-1.937,3.191-0.556
+	c1.489,1.393,1.203,2.362-0.137,3.61C14.954,8.078,11.645,11.328,7.112,15.687z"/>
 </svg>
