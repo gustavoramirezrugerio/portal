@@ -53,12 +53,12 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden"><a href="#page-top"></a></li>
-                    <li><a class="page-scroll" href="#acercaDe">CULTURA EMPRESARIAL</a></li>
+                    <li><a class="page-scroll" href="#acercaDe">EMPRESA</a></li>
                     <li><a class="page-scroll" href="#portfolio2">CONSULTORÍA</a></li>
                     <li><a class="page-scroll" href="#portfolio">TECNOLOGÍA</a></li>
                     <li><a class="page-scroll" href="#clientes">CLIENTES</a></li>
                     <li><a class="page-scroll" href="#documentacion">DOCUMENTACIÓN</a></li>
-                    <!--li><a class="page-scroll" href="#contact">Contacto</a></li-->
+                    <li><a class="portafolio-lin" data-toggle="modal" href="#privacidad">PRIVACIDAD</a></li>                    <!--li><a class="page-scroll" href="#contact">Contacto</a></li-->
                     <li id="iconPhone" ><a class="page-scroll" href="#contacto"><i class="fa fa-phone fa-2x"></i></a></li>
                     <li id="">          <a class="page-scroll " href="#geolocalizacion"><i class="fa fa-map-marker fa-2x iconMap "></i></a></li>
 
@@ -170,7 +170,7 @@
 
   <!-- Navigation -->
     <div class="inferior">
-    <nav class="  ">
+    <nav class="">
        <div class="" align="right">
 
        <button type="button" class="btn contactar text-primary"> <a class="page-scroll" href="#contacto">Contactar</a></button>
@@ -538,41 +538,68 @@
                     </div>
 
 
+<!-- :::::::::::::::::::::::::: INICIA FORMULARIO CONTACTO :::::::::::::::::::::::::: -->
+
+<div class="col-xs-12" id="form-contacto" align="left">
+	<p>&nbsp;</p>
+    <p style="color: blcak;">
+		Gracias por su interés en Xpertys. Por favor, proporcione la siguiente información para poder servirle. Esta información será dirigida al consultor adecuado.
+	</p>
+	<p>&nbsp;</p>
+					<div class="panel panel-default">
+						<div class="panel-body">
+							<form id="formContacto">
+								<div class="form-group">
+									<label class="control-label" for="nombre">Nombre:</label>
+									<input id="nombre" class="form-control" placeholder="Nombre Completo" name="nombre" type="text" onkeyup="mostrarOcularBtnEnviarCorreos()" />
+								</div>
+								<table width="100%">
+									<tr>
+										<td width="45%">
+											<div class="form-group">
+												<label class="control-label" for="email">Correo electronico:</label>
+												<input id="email" class="form-control" placeholder="Correo" name="email" type="text" onkeyup="mostrarOcularBtnEnviarCorreos()"/>
+											</div>
+										</td>
+										<td width="10%">
+											<td>
+												<td width="45%">
+													<div class="form-group">
+														<label class="control-label" for="telefono">Teléfono:</label>
+														<input id="telefono" class="form-control" placeholder="Télefono" name="telefono" type="text" onkeyup="mostrarOcularBtnEnviarCorreos()"/>
+													</div>
+												</td>
+											</tr>
+										</table>
+
+										<div class="form-group">
+											<label class="control-label" for="organizacion">Organización:</label>
+											<input id="organizacion" class="form-control" placeholder="Organización" name="organizacion" type="text" onkeyup="mostrarOcularBtnEnviarCorreos()"/>
+										</div>
+
+										<div class="form-group">
+											<label class="control-label" for="mensaje">Mensaje:</label>
+											<textarea id="mensaje" placeholder="Mensaje" style="resize: vertical;" class="form-control" name="mensaje" onkeyup="mostrarOcularBtnEnviarCorreos()"></textarea>
+										</div>
+
+
+									</form>
+								</div>
+								<div class="panel-footer">
+									<button id="btnEviarCorreo" style="display:none;" type="button" class="btn btn-primary" onclick="validarForm()">Enviar</button>
+									<div id="divMsjExito" style="display:none;" class="alert alert-success" role="alert">
+										Su mensaje ha sido enviado a nuestra área de operaciones!!
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
 
 
 
 
-
-                        <div id="form-contacto"  class="row elementoOcultarMostrar">
-                            <div class="col-lg-12">
-                                <form name="sentMessage" id="contactForm" novalidate>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <input type="text" class="form-control" placeholder="Su nombre *" id="name" required data-validation-required-message="Por favor ingrese su nombre.">
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                            <div class="form-group">
-                                                <input type="email" class="form-control" placeholder="Su email *" id="email" required data-validation-required-message="Por favor ingrese su email.">
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-
-                                        </div>
-                                        <div class="col-md-6">
-                                            <div class="form-group">
-                                                <textarea rows="10" class="form-control" placeholder="Su mensaje *" id="message" required data-validation-required-message="Por favor ingrese su mensaje."></textarea>
-                                                <p class="help-block text-danger"></p>
-                                            </div>
-                                        </div>
-                                        <div class="clearfix"></div>
-                                        <div class="col-lg-12 text-center">
-                                            <div id="success"></div>
-                                            <button type="submit" class="btn btn-xl">Enviar mensaje</button>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
+<!-- :::::::::::::::::::::::::: TERMINA FORMULARIO CONTACTO :::::::::::::::::::::::::: -->
 
 
 
@@ -596,8 +623,15 @@
 <div class="portfolio-modal modal fade" id="consultoria-outsourcing" tabindex="-1" role="dialog" aria-hidden="true">
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"> </div>
-            <h2 align="left" style="color:#FFF; margin-left:250px;">Outsourcing</h2>
-            <p>&nbsp;</p>
+            
+            <div class="container">
+            	<div class="row">
+            		<div class="col-lg-8 col-lg-offset-2">
+            			<h2 align="left" style="color:#FFF;">Outsourcing</h2>
+            		</div>
+            	</div>
+            </div>
+
             <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
@@ -637,10 +671,17 @@
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"> <div class="lr"> <div class="rl"> </div> </div> </div>
             <div class="container">
+            	<div class="row">
+            		<div class="col-lg-8 col-lg-offset-2">
+            			<h2 align="left" style="color:#FFF;">Ingeniería</h2>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Ingeniería de procesos</h2>
                             <!--p class="item-intro text-primary">Texto de prueba</p-->
                             <img src="assets/imagenes/consultoria/complementariaI.svg">
                             <p align="left" class="text-muted">La Gestión o administración por procesos de negocio (Business Process Management) es la metodología corporativa para mejorar el desempeño de la Organización a través de la gestión de los procesos de negocio, que se deben diseñar, modelar, organizar, documentar y optimizar de forma continua.</p>
@@ -670,10 +711,17 @@
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"> <div class="lr"> <div class="rl"> </div> </div> </div>
             <div class="container">
+            	<div class="row">
+            		<div class="col-lg-8 col-lg-offset-2">
+            			<h2 align="left" style="color:#FFF;">Fábrica de software</h2>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Fábrica de software</h2>
                             <!--p class="item-intro text-primary">Texto de prueba</p-->
 
                             <p align="left" class="text-muted">Somos una empresa de la industria de software, cuya misión es generar aplicaciones empresariales según el proceso de “Gestión del requerimiento”.</p>
@@ -695,10 +743,17 @@
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"> <div class="lr"> <div class="rl"> </div> </div> </div>
             <div class="container">
+            	<div class="row">
+            		<div class="col-lg-8 col-lg-offset-2">
+            			<h2 align="left" style="color:#FFF;">Business Intelligence</h2>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Business Intelligence</h2>
                             <!--p class="item-intro text-primary">Texto de prueba</p-->
                             <img src="assets/imagenes/consultoria/complementariaB.svg" >
                             <p align="left" class="text-muted">Nuestra área de análisis e implementación de sistemas de inteligencia de negocios, tiene la experiencia y habilidad para transformar los datos en información, información que se convierte en “conocer de otra forma el negocio” para optimizar procesos y toma de decisiones oportunas.</p>
@@ -723,10 +778,17 @@
         <div class="modal-content">
             <div class="close-modal" data-dismiss="modal"> <div class="lr"> <div class="rl"> </div> </div> </div>
             <div class="container">
+            	<div class="row">
+            		<div class="col-lg-8 col-lg-offset-2">
+            			<h2 align="left" style="color:#FFF;">Proyectos</h2>
+            		</div>
+            	</div>
+            </div>
+            
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-8 col-lg-offset-2">
                         <div class="modal-body">
-                            <h2>Proyectos</h2>
                             <!--p class="item-intro text-primary">Texto de prueba</p-->
                             <img src="assets/imagenes/consultoria/complementariaP.svg" >
                             <p align="left" class="text-muted">Desarrollamos, adecuamos, soportamos e implementamos procesos que facilitan la planeación, seguimiento y control de los proyectos de desarrollo de software. Diagnosticamos y creamos Oficinas de Proyectos (PMO), ofrecemos outsourcing en la administración de proyectos a través de la aplicación de nuestras metodologías y dando soporte a los responsables de los proyectos de nuestros clientes.</p>
@@ -859,7 +921,38 @@
         </div>
     </div>
 
-
+<!--AVISO DE PRIVACIDAD-->
+    <div class="portfolio-modal modal fade" id="privacidad" tabindex="-1" role="dialog" aria-hidden="true">
+        <div class="modal-content">
+            <div class="close-modal" data-dismiss="modal"> <div class="lr"> <div class="rl"> </div> </div> </div>
+            <div class="container modal-body">
+                <div class="row">
+                    <div>
+                        <h2>Puntos destacados de la Declaración de Privacidad Online de Xpertys</h2>
+                        <p>&nbsp;</p>
+                        <div align="center">
+                        	<p>RI-XPERTYS, S.A. DE C.V., mejor conocido como Xpertys Consultoría y Fábrica de Software, con domicilio en Av. Benito Juárez, Ext. 226 Int. 29, Los Cedros, Metepec, C.P. 52154, Estado de México, México, y portal de internet http://xpertys.com.mx/, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
+                          <h3>¿Para qué fines utilizaremos sus datos personales?</h3>
+                          <p>De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención:</p>
+                            <ul>
+                              <li>Proveerle un servicio y/o un producto</li>
+                              <li>Levantar requerimientos de software y llevar a cabo todas las actividades inherentes al seguimiento y entrega de los mismos</li>
+                              <li>Llevar el registro de los clientes que adquieran los productos y servicios que ofrece RI-XPERTYS S.A. de C.V. y que se puedan llevar a cabo las operaciones que se crean necesarias</li>
+                              <li>Facturación y cobranza</li>
+                              <li>Prospección comercial</li>
+                            </ul>
+                          <p>En caso de que no desee que sus datos personales sean tratados para estos fines secundarios, desde este momento usted nos puede comunicar lo anterior a través del siguiente mecanismo:</p>
+                          <p>Deberá notificar su negativa al tratamiento de sus datos personales al responsable del Área Legal en RI-XPERTYS S.A. de C.V.</p>
+                          <p>La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.</p>
+                          <h3>¿Dónde puedo consultar el aviso de privacidad integral?</h3>
+                          <p>Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral en:</p>
+                          <p>Solicitarlo por correo electrónico a la dirección contacto@xpertys.com.mx</p>
+                        </div>
+                    </div>
+                </div> <!-- row -->
+            </div>
+        </div>
+    </div>
 <!-- :::::::::::::::::::::::::: ASSETS JS :::::::::::::::::::::::::: -->
 
 	<script type="text/javascript" charset="utf-8" src="assets/vendors/jquery-1.11.0.js"></script>
@@ -868,5 +961,10 @@
 	<script type="text/javascript" charset="utf-8" src="assets/js/agency.js"></script>
 	<script type="text/javascript" charset="utf-8" src="assets/js/jquery.lazyload.js"></script>
 	<script type="text/javascript" charset="utf-8" src="assets/js/lazyLoad.js"></script>
+	<script type="text/javascript" charset="utf-8" src="assets/js/scriptContacto.js"></script>
+    <!-- CAUSA CONFLICTO <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>-->
+    <!-- Validation -->
+ <script language="JavaScript" type="text/javascript" src="assets/js/jquery-validation/jquery.validate.min.js"></script>
+ <script src="assets/js/jquery-validation/messages_es.js" type="text/javascript"></script>
 </body>
 </html>

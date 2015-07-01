@@ -9,6 +9,21 @@ $(function() {
     });
     //$( ".ocultarElmentosInicio" ).hide();
 });
+$(document).ready(function(e) {
+  $("#img-tecnologia-web").attr("data-original","assets/imagenes/tecnologia/opacity_web.svg");
+  $("#img-tecnologia-arquitectura").attr("data-original","assets/imagenes/tecnologia/opacity_arquitecturas.svg");
+  $("#img-tecnologia-lenguaje").attr("data-original","assets/imagenes/tecnologia/opacity_lenguajes.svg");
+
+  $("#img-tecnologia-servidores").attr("data-original","assets/imagenes/tecnologia/opacity_servidores.svg");
+
+  $("#img-tecnologia-basesdedatos").attr("data-original","assets/imagenes/tecnologia/opacity_basesdedatos.svg");
+
+  $("#img-tecnologia-sistemaOperativo").attr("data-original","assets/imagenes/tecnologia/opacity_sistemas.svg");
+
+	  console.log("documento listo");
+
+    
+});
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
     target: '.navbar-fixed-top'
@@ -97,45 +112,45 @@ $(document).ready(function(){
 
 ////////////////////////////  Web
 $("#webSoportada").mouseover(function(event){
-  $("#img-tecnologia-web").attr("src","assets/imagenes/tecnologia/sistemas.svg");//CAMBIA-IMAGEN---
+  $("#img-tecnologia-web").attr("src","assets/imagenes/tecnologia/web.svg");//CAMBIA-IMAGEN---
 });
 
 $("#webSoportada").mouseout(function(event){
-  $("#img-tecnologia-web").attr("src","assets/imagenes/tecnologia/web.svg");
+  $("#img-tecnologia-web").attr("src","assets/imagenes/tecnologia/opacity_web.svg");
 });
 ////////////////////////////  Arquitectura
 $("#arquitecturas").mouseover(function(event){
-  $("#img-tecnologia-arquitectura").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+  $("#img-tecnologia-arquitectura").attr("src","assets/imagenes/tecnologia/arquitecturas.svg"); //CAMBIA-IMAGEN---
 });
 
 $("#arquitecturas").mouseout(function(event){
-  $("#img-tecnologia-arquitectura").attr("src","assets/imagenes/tecnologia/arquitecturas.svg");
+  $("#img-tecnologia-arquitectura").attr("src","assets/imagenes/tecnologia/opacity_arquitecturas.svg");
 });
 ////////////////////////////  Lenguajes
 $("#lenguajes").mouseover(function(event){
-  $("#img-tecnologia-lenguaje").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+  $("#img-tecnologia-lenguaje").attr("src","assets/imagenes/tecnologia/lenguajes.svg"); //CAMBIA-IMAGEN---
 });
 $("#lenguajes").mouseout(function(event){
-  $("#img-tecnologia-lenguaje").attr("src","assets/imagenes/tecnologia/lenguajes.svg");
+  $("#img-tecnologia-lenguaje").attr("src","assets/imagenes/tecnologia/opacity_lenguajes.svg");
 });
 ////////////////////////////  servidores
 $("#servidores").mouseover(function(event){
-  $("#img-tecnologia-servidores").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+  $("#img-tecnologia-servidores").attr("src","assets/imagenes/tecnologia/servidores.svg"); //CAMBIA-IMAGEN---
 });
 $("#servidores").mouseout(function(event){
-  $("#img-tecnologia-servidores").attr("src","assets/imagenes/tecnologia/servidores.svg");
+  $("#img-tecnologia-servidores").attr("src","assets/imagenes/tecnologia/opacity_servidores.svg");
 });
 ////////////////////////////  basesdedatos
 $("#basesdedatos").mouseover(function(event){
-  $("#img-tecnologia-basesdedatos").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+  $("#img-tecnologia-basesdedatos").attr("src","assets/imagenes/tecnologia/basesdedatos.svg"); //CAMBIA-IMAGEN---
 });
 $("#basesdedatos").mouseout(function(event){
-  $("#img-tecnologia-basesdedatos").attr("src","assets/imagenes/tecnologia/basesdedatos.svg");
+  $("#img-tecnologia-basesdedatos").attr("src","assets/imagenes/tecnologia/opacity_basesdedatos.svg");
 });
 ////////////////////////////  Sistemas operativos
 $("#sistemaOperativo").mouseover(function(event){
-  $("#img-tecnologia-sistemaOperativo").attr("src","assets/imagenes/tecnologia/basesdedatos.svg"); //CAMBIA-IMAGEN---
+  $("#img-tecnologia-sistemaOperativo").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
 });
 $("#sistemaOperativo").mouseout(function(event){
-  $("#img-tecnologia-sistemaOperativo").attr("src","assets/imagenes/tecnologia/sistemas.svg");
+  $("#img-tecnologia-sistemaOperativo").attr("src","assets/imagenes/tecnologia/opacity_sistemas.svg");
 });
