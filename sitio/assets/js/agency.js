@@ -94,3 +94,48 @@ $(document).ready(function(){
 
 
 
+
+////////////////////////////  Web
+$("#webSoportada").mouseover(function(event){
+  $("#img-tecnologia-web").attr("src","assets/imagenes/tecnologia/sistemas.svg");//CAMBIA-IMAGEN---
+});
+
+$("#webSoportada").mouseout(function(event){
+  $("#img-tecnologia-web").attr("src","assets/imagenes/tecnologia/web.svg");
+});
+////////////////////////////  Arquitectura
+$("#arquitecturas").mouseover(function(event){
+  $("#img-tecnologia-arquitectura").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+});
+
+$("#arquitecturas").mouseout(function(event){
+  $("#img-tecnologia-arquitectura").attr("src","assets/imagenes/tecnologia/arquitecturas.svg");
+});
+////////////////////////////  Lenguajes
+$("#lenguajes").mouseover(function(event){
+  $("#img-tecnologia-lenguaje").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+});
+$("#lenguajes").mouseout(function(event){
+  $("#img-tecnologia-lenguaje").attr("src","assets/imagenes/tecnologia/lenguajes.svg");
+});
+////////////////////////////  servidores
+$("#servidores").mouseover(function(event){
+  $("#img-tecnologia-servidores").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+});
+$("#servidores").mouseout(function(event){
+  $("#img-tecnologia-servidores").attr("src","assets/imagenes/tecnologia/servidores.svg");
+});
+////////////////////////////  basesdedatos
+$("#basesdedatos").mouseover(function(event){
+  $("#img-tecnologia-basesdedatos").attr("src","assets/imagenes/tecnologia/sistemas.svg"); //CAMBIA-IMAGEN---
+});
+$("#basesdedatos").mouseout(function(event){
+  $("#img-tecnologia-basesdedatos").attr("src","assets/imagenes/tecnologia/basesdedatos.svg");
+});
+////////////////////////////  Sistemas operativos
+$("#sistemaOperativo").mouseover(function(event){
+  $("#img-tecnologia-sistemaOperativo").attr("src","assets/imagenes/tecnologia/basesdedatos.svg"); //CAMBIA-IMAGEN---
+});
+$("#sistemaOperativo").mouseout(function(event){
+  $("#img-tecnologia-sistemaOperativo").attr("src","assets/imagenes/tecnologia/sistemas.svg");
+});

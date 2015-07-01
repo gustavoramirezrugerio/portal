@@ -317,7 +317,7 @@ section h3.section-subheading {
   height: 100%;
   opacity: 0;
   /*background: rgba(0,0,0,0.6);*/
-  background: rgba(0,0,0,0.6);
+  /*background: rgba(0,0,0,0.6);*/
   -webkit-transition: all ease 0.5s;
   -moz-transition: all ease 0.5s;
   transition: all ease 0.5s;
