@@ -8,6 +8,16 @@
        local('Roboto-Light'),
        url(Roboto-Light.woff) format('woff');
 }
+@font-face {
+  font-family: 'Roboto-BoldCondensed';
+  /* Antes de descargar el archivo, le decimos al buscador
+  que intente buscar en local la fuente con nombre
+  Cabin, Cabin Regular o Cabin-Regular */
+  src: local('Roboto-BoldCondensed'),
+       local('Roboto-BoldCondensed'),
+       local('Roboto-BoldCondensed'),
+       url(Roboto-BoldCondensed.woff) format('woff');
+}
 body {
   overflow-x: hidden;
   font-family: "Roboto-Light";
@@ -35,6 +45,11 @@ p {
 }
 p.large {
   font-size: 16px;
+}
+.robotoBold {
+  overflow-x: hidden;
+  font-family: "Roboto-BoldCondensed";
+  webkit-tap-highlight-color: #0097a7;
 }
 a,
 a:hover,
@@ -215,7 +230,7 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default .nav li a:hover,
 .navbar-default .nav li a:focus {
   outline: 0;
-  color: #0097a7;
+  color: #ccc;
 }
 .navbar-default .navbar-nav>.active>a:hover,
 .navbar-default .navbar-nav>.active>a:focus {
@@ -729,7 +744,7 @@ img::-moz-selection {
   background-size: cover;
   -o-background-size: cover;
   padding-top: 250px;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 .Cultura-imagen3 {
   background-image: url("../../assets/imagenes/cultura/imagen1.png");
@@ -872,4 +887,3 @@ button, input, optgroup, select, textarea {
 
 
 }/*Media*/
-
