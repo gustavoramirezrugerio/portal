@@ -32,7 +32,6 @@ body {
 p {
   font-size: 14px;
   line-height: 1.75;
-  text-align:justify;
 }
 p.large {
   font-size: 16px;
@@ -846,4 +845,11 @@ button, input, optgroup, select, textarea {
 .btn:hover, .btn:focus {
   color: #FFF;
   background-color:#648493;
+}
+.panel {
+  background: none;
+  border: 0px;
+}
+.panel-footer {
+  background: none;
 }
