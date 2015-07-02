@@ -22,7 +22,7 @@ $(document).ready(function(e) {
 
 	  console.log("documento listo");
 
-    
+
 });
 // Highlight the top nav as scrolling occurs
 $('body').scrollspy({
@@ -74,38 +74,30 @@ $(document).ready(function(){
   });
   /******  next    ******/
   function ocultarElementos(){
-
-
+    console.log("Ocultamos elementos de inicio");
+    $('#contenidoContactoTelefono').hide();
+    $('#contenidoGeolocalizacion').hide();
     $('#form-contacto').hide();
-    $('#form-telefono').hide();
-    $('#form-map').hide();
   }
-
   ocultarElementos();
 
-  $("#contacto").mouseover(function(event){
-    //ocultarElementos();
-    $( "#iconPhone" ).hide();
-  });
+  $('#iconPhone').click(function() {
+      ocultarElementos();
+      $('#contenidoContactoTelefono').show();
+    });
 
-  $("#contacto").mouseout(function(event){
-    $( "#iconPhone" ).show();
-  });
+    $('#iconGeolocalizacion').click(function() {
+      ocultarElementos();
+      $('#contenidoGeolocalizacion').show();
+    });
+
+    $('#iconContacto').click(function() {
+      ocultarElementos();
+      $('#form-contacto').show();
+    });
 
 
 
-  $('#icon-contacto').click(function() {
-    ocultarElementos();
-    $('#form-contacto').toggle();
-  });
-  $('.iconMap').click(function() {
-    ocultarElementos();
-    $('#form-map').toggle();
-  });
-  $('#iconPhoneEnlace').click(function() {
-    ocultarElementos();
-    $('#form-telefono').toggle();
-  });
 
 
 

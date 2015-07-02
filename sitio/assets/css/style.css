@@ -334,7 +334,7 @@ section h3.section-subheading {
   transition: all ease 0.5s;
 }
 #acercaDe{
-  height: 600px;
+  height: 100%;
 }
 #portfolio .portfolio-item .portfolio-link .portfolio-hover:hover {
   opacity: 1;
@@ -801,7 +801,20 @@ img::-moz-selection {
   color: #FFF;
   background-color: transparent;
 }
-
+button, input, optgroup, select, textarea {
+  margin: 10px;
+}
+.btn:hover, .btn:focus {
+  color: #FFF;
+  background-color:#648493;
+}
+.panel {
+  background: none;
+  border: 0px;
+}
+.panel-footer {
+  background: none;
+}
 
 /*******************************************************
 ********************  RESPONSIVE   *********************
@@ -811,9 +824,9 @@ img::-moz-selection {
     padding-top: 5px;
     padding-bottom: 350px;
   }
-.inferior {
+  .inferior {
   bottom: 40px;
-}
+  }
 }
 @media screen and (max-width: 990px) {
   .logo_nav {
@@ -839,17 +852,24 @@ img::-moz-selection {
 }
 
 
-button, input, optgroup, select, textarea {
-  margin: 10px;
-}
-.btn:hover, .btn:focus {
-  color: #FFF;
-  background-color:#648493;
-}
-.panel {
-  background: none;
-  border: 0px;
-}
-.panel-footer {
-  background: none;
-}
+@media screen and (max-width: 1000px) {
+  .navbar-default {
+    background-image: url();
+    background-color:  #ccc;
+  }
+  /*navbar-collapse collapse in*/
+  .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
+    max-height: 100%;
+  }
+  .navbar-collapse.collapse {
+    display: block!important;
+    height: auto!important;
+    padding-bottom: 0;
+    overflow: visible!important;
+  }
+  #iconPhone{}
+
+
+
+}/*Media*/
+
