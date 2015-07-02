@@ -261,6 +261,9 @@ header {
 .carousel-inner {
   height: 100%;
 }
+.carousel-inner1 {
+  height: 300px;
+}
 #slider1 {
   background-image: url("../../assets/imagenes/header-bg.png");
   background-position: center center;
@@ -842,6 +845,9 @@ button, input, optgroup, select, textarea {
   .inferior {
   bottom: 40px;
   }
+  .carousel-inner1 {
+  height: 680px;
+}
 }
 @media screen and (max-width: 990px) {
   .logo_nav {
@@ -864,20 +870,28 @@ button, input, optgroup, select, textarea {
   .inferior {
   bottom: 40px;
 }
+.Cultura-imagen2 {
+  background-image: url("../../assets/imagenes/cultura/trabajo_equipo1.png");
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 250px;
+  padding-bottom: 10px;
 }
-
 
 @media screen and (max-width: 1000px) {
   .navbar-default {
-    background-image: url();
-    background-color:  #ccc;
+	background-image: url("../../assets/imagenes/nav_bg_media.png");
   }
   /*navbar-collapse collapse in*/
   .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
     max-height: 100%;
   }
   .navbar-collapse.collapse {
-    display: block!important;
+    /*display: block!important;*/
     height: auto!important;
     padding-bottom: 0;
     overflow: visible!important;
@@ -887,3 +901,5 @@ button, input, optgroup, select, textarea {
 
 
 }/*Media*/
+
+
