@@ -26,6 +26,30 @@ body {
 .fa {
   border-radius: 100px;
 }
+.fadoc {
+  border-radius: 100px;
+  color:#0060C4;
+}
+.fadoc:hover {
+  border-radius: 100px;
+  color:#999;
+}
+.fapdf {
+  border-radius: 100px;
+  color:#B51E22;
+}
+.fapdf:hover {
+  border-radius: 100px;
+  color:#999;
+}
+.faplay {
+  border-radius: 100px;
+  color:#568A35;
+}
+.faplay:hover {
+  border-radius: 100px;
+  color:#999;
+}
 .fa-inverse {
   background-color: #0097a7;
   color: #fff;
@@ -901,5 +925,3 @@ button, input, optgroup, select, textarea {
 
 
 }/*Media*/
-
-
