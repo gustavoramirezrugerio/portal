@@ -748,6 +748,7 @@ img::-moz-selection {
   color: #000;
   text-shadow: 0 1px 2px rgba(0,0,0,0);
   opacity: 1;
+  margin:50px;
 }
 .carousel-control:hover {
   color: #455a64;
@@ -769,7 +770,7 @@ img::-moz-selection {
   padding-bottom: -150px;
 }
 .Cultura-imagen2 {
-  background-image: url("../../assets/imagenes/cultura/trabajo_equipo1.png");
+  background-image: url("../../assets/imagenes/cultura/empresa1.svg");
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
@@ -778,17 +779,6 @@ img::-moz-selection {
   -o-background-size: cover;
   padding-top: 250px;
   padding-bottom: 10px;
-}
-.Cultura-imagen3 {
-  background-image: url("../../assets/imagenes/cultura/imagen1.png");
-  background-position: center center;
-  background-repeat: none;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
-  -o-background-size: cover;
-  padding-top: 250px;
-  padding-bottom: 30px;
 }
 /*Iconos Consultoría*/
 @font-face {
@@ -864,6 +854,14 @@ button, input, optgroup, select, textarea {
   background: none;
 }
 
+/*.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+ position: absolute;
+ top: 50%;
+ z-index: 5;
+ display: inline-block;
+ background-color: #fff;
+}*/
+
 /*******************************************************
 ********************  RESPONSIVE   *********************
 ********************************************************/
@@ -900,18 +898,29 @@ button, input, optgroup, select, textarea {
   .inferior {
   bottom: 40px;
 }
-.Cultura-imagen2 {
-  background-image: url("../../assets/imagenes/cultura/trabajo_equipo1.png");
+.Cultura-imagen1 {
+  background-image: url("../../assets/imagenes/cultura/empresa2.svg");
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding-top: 250px;
+  padding-top: 100px;
+  padding-bottom: -150px;
+}
+.Cultura-imagen2 {
+  background-image: url("../../assets/imagenes/cultura/empresa1mini.svg");
+  background-position: center center;
+  background-repeat: none;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  padding-top: 50px;
   padding-bottom: 10px;
 }
-
+}
 @media screen and (max-width: 1000px) {
   .navbar-default {
 	background-image: url("../../assets/imagenes/nav_bg_media.png");
@@ -927,8 +936,6 @@ button, input, optgroup, select, textarea {
     overflow: visible!important;
   }
   #iconPhone{}
-
-
 
 }
 /*Media*/
