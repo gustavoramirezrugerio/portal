@@ -864,6 +864,15 @@ button, input, optgroup, select, textarea {
   background: none;
 }
 
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  background-color: #fff;
+}
+
+
 /*******************************************************
 ********************  RESPONSIVE   *********************
 ********************************************************/
