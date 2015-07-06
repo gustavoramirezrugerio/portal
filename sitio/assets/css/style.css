@@ -262,7 +262,7 @@ fieldset[disabled] .btn-xl.active {
   background-color: transparent;
 }
 .logo_nav {
-  background-image: url("../../assets/imagenes/logo_mini.png");
+  background-image: url("../../assets/imagenes/logo_mini.svg");
   background-repeat: no-repeat;
   background-size: 100%;
   width: 80px;
@@ -758,14 +758,14 @@ img::-moz-selection {
 }
 /*.link-secundario*/
 .Cultura-imagen1 {
-  background-image: url("../../assets/imagenes/cultura/trabajo_equipo.png");
+  background-image: url("../../assets/imagenes/cultura/empresa2.svg");
   background-position: center center;
   background-repeat: none;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  padding-top: 100px;
+  padding-top: 150px;
   padding-bottom: -150px;
 }
 .Cultura-imagen2 {
@@ -881,13 +881,13 @@ button, input, optgroup, select, textarea {
 }
 @media screen and (max-width: 990px) {
   .logo_nav {
-    background-image: url("../../assets/imagenes/logo_mini2.png");
+    background-image: url("../../assets/imagenes/logo_mini2.SVG");
     background-repeat: no-repeat;
     background-size: 100%;
     width: 20px;
     height: 35px;
     display: block;
-    *background-image: url("../../assets/imagenes/logo_mini.png");
+    *background-image: url("../../assets/imagenes/logo_mini2.png");
   }
   .carousel-control,
   .glyphicon-chevron-left {
@@ -930,4 +930,5 @@ button, input, optgroup, select, textarea {
 
 
 
-}/*Media*/
+}
+/*Media*/
