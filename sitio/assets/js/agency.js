@@ -146,3 +146,13 @@ $("#sistemaOperativo").mouseover(function(event){
 $("#sistemaOperativo").mouseout(function(event){
   $("#img-tecnologia-sistemaOperativo").attr("src","assets/imagenes/tecnologia/opacity_sistemas.svg");
 });
+
+$('#idContacto').click(function() {
+   $('#contenidoContactoTelefono').show();
+  $('#contenidoGeolocalizacion').hide();
+});
+
+$('#idGeolocalizacion').click(function() {
+  $('#contenidoContactoTelefono').hide();
+  $('#contenidoGeolocalizacion').show();
+});
