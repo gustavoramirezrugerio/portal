@@ -35,9 +35,7 @@
   <![endif]-->
 
 
-
-
-
+  
     <!-- Begin Navbar -->
     <nav class="navbar navbar-default navbar-fixed-top">
         <div class="container">
@@ -54,10 +52,10 @@
                 <ul class="nav navbar-nav navbar-right">
                     <li class="hidden"><a href="#page-top"></a></li>
                     <li><a class="page-scroll" href="#acercaDe">EMPRESA</a></li>
-                    <li><a class="page-scroll" href="#portfolio2">CONSULTORÍA</a></li>
+                    <li><a class="page-scroll" href="#portfolio2">NUESTROS SERVICIOS</a></li>
                     <li><a class="page-scroll" href="#portfolio">TECNOLOGÍA</a></li>
-                    <li><a class="page-scroll" href="#documentacion">DOCUMENTACIÓN</a></li>
-                    <li><a class="portafolio-lin" data-toggle="modal" href="#privacidad">PRIVACIDAD</a></li>                    <!--li><a class="page-scroll" href="#contact">Contacto</a></li-->
+                    <!-- <li><a class="page-scroll" href="#documentacion">DOCUMENTACIÓN</a></li> -->
+                    <li><a class="portafolio-lin" data-toggle="modal" href="#privacidad">AVISO DE PRIVACIDAD</a></li>                    <!--li><a class="page-scroll" href="#contact">Contacto</a></li-->
                     <li><a class="page-scroll" href="#contacto"><i class="fa fa-phone fa-2x"></i></a></li>
                     <li><a class="page-scroll " href="#geolocalizacion"><i class="fa fa-map-marker fa-2x iconMap "></i></a></li>
 
@@ -69,18 +67,20 @@
     <!-- Header -->
 
 
-    <div id="myCarousel" class="carousel slide" data-interval="3000" data-ride="carousel" >
+				
+    <div id="myCarousel" class="carousel slide" data-interval="3000" data-pause="hover" data-ride="carousel" >
+		
         <div class="carousel-inner">
             <div class="active item" >
                 <!--div class="img-responsive" id="slider1"> </div-->
                 <!--img src="assets/imagenes/header-bg_b.png" alt="" width="100%" height="100%"-->
                 <div id="">
-                    <img src="assets/imagenes/header1.jpg" alt="" width="100%" >
+                    <img src="assets/imagenes/header1.jpg" alt="" width="100%" height="50%">
                 </div>
             </div>
             <div class="item">
                 <div id="">
-                    <img src="assets/imagenes/header2.jpg" alt="" width="100%" height="50%">
+                    <img src="assets/imagenes/header2.jpg" alt="roy" width="100%" height="50%">
                 </div>
             </div>
             <div class="item">
@@ -93,17 +93,26 @@
                     <img src="assets/imagenes/header4.jpg" alt="" width="100%" height="50%">
                 </div>
             </div>
+        		
         </div>
 
-        <!-- Carousel controls -->
+        <!-- Carousel controls 
         <a class="carousel-control left" href="#myCarousel" data-slide="prev">
-            <!--span class="glyphicon glyphicon-chevron-left"></span-->
+            <span class="glyphicon glyphicon-chevron-left"></span>
         </a>
         <a class="carousel-control right" href="#myCarousel" data-slide="next">
-            <!--span class="glyphicon glyphicon-chevron-right"></span-->
+            <span class="glyphicon glyphicon-chevron-right"></span>
         </a>
-    </div>
+		-->
+ 			
+		             <a class="center carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left"></span>
+                  </a>
 
+                  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right"></span>
+                  </a>
+    </div>
 
 
     <!-- acercaDe Section -->
@@ -112,7 +121,7 @@
             <div class="row">
                 <div class="col-lg-12 ">
                     <h2 class="section-heading text-center">Cultura empresarial</h2>
-                    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                    <div id="carousel-example-generic" data-interval="false" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner carousel-inner1">
 
                             <div class="item active">
@@ -173,7 +182,7 @@
     <nav class="">
        <a class="page-scroll" href="#contacto"><div class="" align="right">
 
-       <button type="button" class="btn contactar text-primary"> Contactar</button>
+       <button type="button" class="btn contactar text-primary"> Contáctenos </button>
        </div></a>
     </nav>
     </div>
@@ -184,8 +193,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Consultoría</h2>
-                    <h4>Contemplamos diversos aspectos para asegurar el cumplimiento de soluciones a sus procesos.</h4>
+                    <h2 class="section-heading">Nuestros Servicios</h2>
+                    <h4>Somos proveedores de servicios profesionales en las siguientes areas de la información asociada a los diferentes mercados</h4>
                     <p>&nbsp;</p>
                 </div>
             </div>
@@ -201,13 +210,17 @@
                         </a>
                         <h4 class="service-heading">Outsourcing</h4>
                         <p class="text-muted">
-                           Servicios de mantenimiento a sus aplicaciones e integración de nuevas funcionalidades sin perder la estructura adecuada.
+                           Proveemos SERVICIOS de PROFESIONALES que asumiran responsabilidad en ejecutar actividades de forma coordinada con nuestros clientes.
+						   <a href="#consultoria-outsourcing" style="color:orange" class="portafolio-link" data-toggle="modal">Más Información</a>
+						    
                         </p>
-                        <p>
+                        <!-- 
+						<p>
                             <a href="#consultoria-outsourcing" class="portafolio-link" data-toggle="modal">
                                 <button class="btn btn-md " type="submit">Saber más</button>
                             </a>
                         </p>
+						 Navigation -->
 
                     </div>
 
@@ -220,12 +233,7 @@
                         <h4 class="service-heading">Ingeniería de procesos</h4>
                         <p class="text-muted">
 							Integramos una metodología para la evaluación, difusión y soporte de los procesos definidos, además de incluir un ciclo de mejora a su negocio.
-
-                        </p>
-                        <p>
-                            <a href="#consultoria-ingenieria" class="portafolio-link" data-toggle="modal">
-                                <button class="btn btn-md " type="submit">Saber más</button>
-                            </a>
+						   <a href="#consultoria-ingenieria" style="color:red" class="portafolio-link" data-toggle="modal">Más Información</a>
                         </p>
                     </div>
 
@@ -237,17 +245,13 @@
                         </a>
                         <h4 class="service-heading">Fábrica de software</h4>
                         <p class="text-muted">
-                           Somos especialistas en levantamiento de requerimientos, análisis, propuestas, diseño, construcción, pruebas e implementación de aplicaciones empresariales web.
-                        </p>
-                        <p>
-                            <a href="#consultoria-fabrica" class="portafolio-link" data-toggle="modal">
-                                <button class="btn btn-md " type="submit">Saber más</button>
-                            </a> </p>
+                           Somos especialistas en levantamiento de requerimientos, análisis, propuestas, diseño, construcción, pruebas e implementación de aplicaciones empresariales.
+						   <a href="#consultoria-fabrica" style="color:green" class="portafolio-link" data-toggle="modal">Más Información...</a>
+                 		</p>
                     </div>
 
                 </div>
             </div>
-
 
             <div class="row">
                 <div class="row text-center">
@@ -261,13 +265,7 @@
                         <h4 class="service-heading">Business Intelligent</h4>
                         <p class="text-muted">
                             Tenemos la experiencia y habilidad para transformar los datos en información, para optimizar procesos del negocio y toma de decisiones oportunas.
-
-                            <p>
-                                <a href="#consultoria-business" class="portafolio-link" data-toggle="modal">
-                                    <button class="btn btn-md " type="submit">Saber más</button>
-                                </a>
-                            </p>
-
+						   <a href="#consultoria-business" style="color:fuchsia" class="portafolio-link" data-toggle="modal">Más Información...</a>
                         </p>
                     </div>
                     <div class="col-md-4">
@@ -276,19 +274,13 @@
                                 <i class="ixs-icoproyectos"></i>
                             </span>
                         </a>
-                        <h4 class="service-heading">Proyectos</h4>
+                        <h4 class="service-heading">Administracion de Proyectos</h4>
                         <p class="text-muted">
                             Desarrollamos, adecuamos, soportamos e implementamos procesos que facilitan la planeación, seguimiento y control de los proyectos de desarrollo de software.
-                        </p>
-
-                        <p>
-                            <a href="#consultoria-proyectos" class="portafolio-link" data-toggle="modal">
-                                <button class="btn btn-md " type="submit">Saber más</button>
-                            </a> </p>
+						   <a href="#consultoria-business" style="color:blue" class="portafolio-link" data-toggle="modal">Más Información...</a>
+					   </p>
                     </div>
                     <div class="col-md-2"></div>
-
-
                 </div>
             </div>
         </div>
@@ -388,7 +380,7 @@
 
     </section>
 
-<!-- documentación Section -->
+<!-- documentación Section 
 
 <section id="documentacion"  class="bg-light-gray">
         <div class="container">
@@ -432,13 +424,15 @@
             </div>
 
 </div></section>
+-->
+
 
     <section id="contacto"  class="back">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading "> <span class="text-muted"> Contacto </span> </h2>
-                    <h4>Xpertys cuenta con profesionales con experiencia, póngase en contacto con nosotros.</h4><p>&nbsp;</p>
+                    <h2 class="section-heading "> <span class="text-muted"> Contáctenos </span> </h2>
+                    <b>Algunas formas de contactarnos</b><p>&nbsp;</p>
                     <div class="row">
                         <div class="col-lg-12 ">
 
@@ -490,7 +484,9 @@
                                            <p>&nbsp;</p>
                                         <h1>(+52) 722 2107 591</h1><h1>(+52) 722 2773 650</h1>
                                         <p>&nbsp;</p>
-                                        <p>&nbsp;</p>
+										 <h4 align="center" style="color: black;">
+                                    De Luneas a Viernes de 9:00 am a 6:00 pm.
+                                </h4><p>&nbsp;</p>
                                     </div>
                                 </div>
                             </div>
@@ -514,7 +510,7 @@
                                                     <div class="panel-body">
                                                         <form id="formContacto">
                                                             <div class="form-group">
-                                                            <h4 style="color: blcak;">
+                                                            <h4 align="center" style="color: black;">
                                     Gracias por su interés en Xpertys. Por favor, proporcione la siguiente información para poder servirle. Esta información será dirigida al consultor adecuado.
                                 </h4><p>&nbsp;</p>
                                                                 <label class="control-label robotoBold" for="nombre">&nbsp;&nbsp;&nbsp;&nbsp;Nombre:</label>
@@ -538,7 +534,6 @@
                                                 </td>
                                             </tr>
                                         </table>
-
                                         <div class="form-group">
                                             <label class="control-label robotoBold" for="organizacion">&nbsp;&nbsp;&nbsp;&nbsp;Organización:</label>
                                             <input id="organizacion" class="form-control" placeholder="Organización" name="organizacion" type="text" onkeyup="mostrarOcularBtnEnviarCorreos()"/>
@@ -548,8 +543,6 @@
                                             <label class="control-label robotoBold" for="mensaje">&nbsp;&nbsp;&nbsp;&nbsp;Mensaje:</label>
                                             <textarea id="mensaje" placeholder="Mensaje" style="resize: vertical;" class="form-control" name="mensaje" onkeyup="mostrarOcularBtnEnviarCorreos()"></textarea>
                                         </div>
-
-
                                     </form>
                                 </div>
                                 <div class="panel-footer">
@@ -598,24 +591,21 @@
                             <p class="text-muted">Buscamos reducir la infraestructura organizacional para su empresa creando estrategias para focalizar los esfuerzos al negocio, incrementando la productividad y calidad y con esto reducir costo.</p>
                             <p class="text-muted"><span class="robotoBold">RI-XPERTYS S.A. de C.V.</span> provee el servicio de mantenimiento de sus aplicaciones. Esto le permitirá concentrarse en su negocio con la seguridad de que sus aplicaciones no pierden la estructura adecuada durante la integración de nueva funcionalidad.
                             </p>
-                            <h3 >Staffing</h3>
+                            <h4><span class="robotoBold">Staffing</span></h4>
                             <p class="text-muted">Ofrecemos el servicio de Asignación de Personal (Staffing) el cual consiste de dotar a las empresas de personal técnico especializado en el desempeño de las actividades o servicios involucrados en el ciclo de desarrollo de sistemas, en una amplia variedad de plataformas tecnológicas y en diversos sectores de industria.</p>
-                            <h3>Soporte a Producción</h3>
+                            <h4><span class="robotoBold">Soporte a Producción</span></h4>
                             <p class="text-muted">Proveemos los recursos necesarios para soportar sus aplicaciones en producción. Esto le permitirá tener un equipo dedicado al mantenimiento evolutivo de su aplicación independiente del equipo que atiende los problemas que no necesariamente son de su aplicación, sino del entorno en el que ejecutan.</p>
-                            <h3>Mantenimiento adaptativo/correctivo</h3>
+                            <h4><span class="robotoBold">Mantenimiento adaptativo/correctivo</span></h4>
                             <p class="text-muted">Este tipo de mantenimiento corrige las fallas descubiertas en su aplicación, tanto las que usuarios o por los mismos miembros del equipo de mantenimiento, esto trae como beneficio el incremento de vida y estabilidad de su aplicación.</p>
-                            <h3>Mantenimiento evolutivo</h3>
+                            <h4><span class="robotoBold">Mantenimiento evolutivo</span></h4>
                             <p class="text-muted">Permite crecer y/o mejorar su aplicación para atender nuevos requerimientos del negocio, debe llevarse a cabo con precaución para no desestabilizar la funcionalidad actual o degradar el desempeño.</p>
-                            <h3>Mantenimiento preventivo</h3>
+                            <h4><span class="robotoBold">Mantenimiento preventivo</span></h4>
                             <p class="text-muted">Este mantenimiento le permite evitar posibles problemas a futuro de su aplicación.</p>
-                            <h3>Administración del Mantenimiento</h3>
+                            <h4><span class="robotoBold">Administración del Mantenimiento</span></h4>
                             <p class="text-muted">Implementamos este proceso para identificar el nivel de capacidad de atención de requerimientos, qué tipo de requerimientos son los que atiende principalmente, cuáles son las tareas que mayor tiempo le demandan a sus recursos, qué usuarios son los que generan el mayor número de requerimientos, etc., con el fin de establecer una mejor estrategia que le permita ser más eficiente.</p>
-                            <h3>Valor Agregado</h3>
+                            <h4><span class="robotoBold">Valor Agregado</span></h4>
                             <p class="text-muted">Contamos con un proceso metodológico diseñado para el mantenimiento de una o varias aplicaciones. Este proceso metodológico está soportado por una herramienta la cual permite la mejor comunicación de todos los involucrados.</p>
-                            <h3 align="center">Nuestro personal cuenta con el conocimiento de las disciplinas de la metodología, la cual está alineada a las prácticas del modelo de madurez y de capacidad.</h3>
-                            <br>
-                            <p class="text-muted">Contamos con una red de soporte técnico de más de 100 colaboradores, un repositorio con prácticas, estándares y componentes reutilizables para el desarrollo de nuestra gente.</p>
-                            <p class="text-muted"></p>
+                            <h4 align="center"  style="color:darkblue" <b> Nuestro personal cuenta con el conocimiento de las disciplinas de la metodología, la cual está alineada a las prácticas del modelo de madurez y de capacidad.</b></h4>
                             <p class="text-muted"></p>
                         </div>
                     </div>
@@ -642,13 +632,16 @@
                             <!--p class="item-intro text-primary">Texto de prueba</p-->
                             <div align="center"><img src="assets/imagenes/consultoria/complementariaI.svg"></div>
                             <p>La Gestión o administración por procesos de negocio (Business Process Management) es la metodología corporativa para mejorar el desempeño de la Organización a través de la gestión de los procesos de negocio, que se deben diseñar, modelar, organizar, documentar y optimizar de forma continua.</p>
-                            <p>Ventajas del modelado de Procesos</p>
+							
+							<h4><span class="robotoBold">Ventajas del modelado de Procesos</span></h4>
+							
                             <ul align="left">
                               <li>Se logra una mejor comprensión de la operación de la empresa, esto presenta una oportunidad para mejorar los procesos y con ello el desempeño.</li>
                               <li>La estructuración de los procesos reduce errores, asegurando que estos se comporten siempre de la misma manera.</li>
                               <li>La administración de los procesos permite asegurar que los mismos se ejecuten eficientemente, cumpliendo con estándares de calidad previamente establecidos</li>
                             </ul>
-							  <p>¿Cómo saber si necesitas BPM?</p>
+							 <h4><span class="robotoBold">¿Cómo saber si necesitas BPM?</span></h4> 
+							 
                             <p>Si en su empresa percibe alguno de los siguientes puntos, es probable que necesite de administración por procesos de negocio:</p>
                             <ul  align="left">
                               <li>Visibilidad deficiente en procesos de Negocio</li>
@@ -685,7 +678,7 @@
                             <p>Nos enfocamos a dar soluciones tecnológicas a requerimientos claros y documentados, somos flexibiles en cuanto a ubicación geográfica de la factoría y especialistas en conseguir calidad de software a un menor costo y automatización de procesos del negocio</p>
                             <p>La dirección de <span class="robotoBold">“Mantenimiento e Investigación de nuevas tecnologías”</span> es la responsable de mantener al equipo de ingenieros al día o en busca de capacitación continua a lo que demanden nuestros clientes”.</p>
                             <p>Contamos con estándares de diseño y construcción que nos permiten una óptima comunicación entre la fábrica y sus proyectos, usando metodologías de construcción y calidad de software, generando aplicaciones a necesidad y entrega certificada de los productos para los ambientes de nuestro cliente con garantía de lo solicitado hasta por siete meses en producción.</p>
-                            <h3>Calidad de desarrollo de software</h3>
+							<h4><span class="robotoBold">Calidad de desarrollo de software</span></h4>                           
                             <p>Para nosotros la calidad de software es un tema no negociable, y se vela porque se apliquen los estándares de acuerso a la tecnología que se use, aplicamos las mejores prácticas tanto en procesos, administración de proyectos y desarrollo de software. Como CMMI, RBPM y SCRUM.</p>
                             <p>Estamos continuamente revisando los niveles de madurez en busca de la calidad de software, estos niveles nos ayudan a que nuestro trabajo pueda ser auditado y sea de calidad en el desarrollo de aplicaciones empresariales.</p>
                         </div>
@@ -748,7 +741,7 @@
                             <!--p class="item-intro text-primary">Texto de prueba</p-->
                             <div align="center"><img src="assets/imagenes/consultoria/complementariaP.svg" ></div>
                             <p>Desarrollamos, adecuamos, soportamos e implementamos procesos que facilitan la planeación, seguimiento y control de los proyectos de desarrollo de software. Diagnosticamos y creamos Oficinas de Proyectos (PMO), ofrecemos outsourcing en la administración de proyectos a través de la aplicación de nuestras metodologías y dando soporte a los responsables de los proyectos de nuestros clientes.</p>
-                            <h3>Áreas de enfoque de la Metodología de Gestión de Proyectos y Programas</h3>
+                            <h4><span class="robotoBold">Áreas de enfoque de la Metodología de Gestión de Proyectos y Programas</span></h4> 
                             <ul>
                               <li>Seguimiento de todo el proyecto desde su fase de iniciativa, la construcción de los planes de trabajo, la ejecución y el cierre del mismo.</li>
                               <li>Monitorear el alcance del proyecto y dar seguimiento a los cambios que podrían afectar el alcance definido.</li>
@@ -996,7 +989,8 @@
 						<div align="justify">
 							<p>&nbsp;</p>
 							<p><img src="assets/imagenes/privacidad.png" class="img-responsive" align="right" hspace="20"/><span class="robotoBold">RI-XPERTYS, S.A. DE C.V.</span>, mejor conocido como Xpertys Consultoría y Fábrica de Software, con domicilio en Av. Benito Juárez, Ext. 226 Int. 29, Los Cedros, Metepec, C.P. 52154, Estado de México, México, y portal de internet http://xpertys.com.mx/, es el responsable del uso y protección de sus datos personales, y al respecto le informamos lo siguiente:</p>
-							<h3>¿Para qué fines utilizaremos sus datos personales?</h3>
+                            <h4><span class="robotoBold">¿Para qué fines utilizaremos sus datos personales?</span></h4>
+
 							<p>De manera adicional, utilizaremos su información personal para las siguientes finalidades secundarias que no son necesarias para el servicio solicitado, pero que nos permiten y facilitan brindarle una mejor atención:</p>
 							<ul>
 								<li>Proveerle un servicio y/o un producto</li>
@@ -1008,10 +1002,12 @@
 							<p>En caso de que no desee que sus datos personales sean tratados para estos fines secundarios, desde este momento usted nos puede comunicar lo anterior a través del siguiente mecanismo:</p>
 							<p>Deberá notificar su negativa al tratamiento de sus datos personales al responsable del Área Legal en RI-XPERTYS S.A. de C.V.</p>
 							<p>La negativa para el uso de sus datos personales para estas finalidades no podrá ser un motivo para que le neguemos los servicios y productos que solicita o contrata con nosotros.</p>
-							<h3>¿Dónde puedo consultar el aviso de privacidad integral?</h3>
+							<h4><span class="robotoBold">¿Dónde puedo consultar el aviso de privacidad integral?</span></h4>
+							
+							
 							<p>Para conocer mayor información sobre los términos y condiciones en que serán tratados sus datos personales, como los terceros con quienes compartimos su información personal y la forma en que podrá ejercer sus derechos ARCO, puede consultar el aviso de privacidad integral en:</p>
                           <p>Solicitarlo por correo electrónico a la dirección:</p>
-							<h3 style="text-align:right;">contacto@xpertys.com.mx</h3>
+							<h4 style="text-align:right;">contacto@xpertys.com.mx</h4>
 						</div>
 					</div>
 
