@@ -865,18 +865,62 @@ button, input, optgroup, select, textarea {
 /*******************************************************
 ********************  RESPONSIVE   *********************
 ********************************************************/
+@media screen and (min-width: 500px) {
+  .header_img1{
+    background-image: url("../../assets/imagenes/header1.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+    display: block;
+    *background-image: url("../../assets/imagenes/favicon.png");
+  }
+  .header_img2{
+    background-image: url("../../assets/imagenes/header2.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 800px;
+    display: block;
+    *background-image: url("../../assets/imagenes/favicon.png");
+  }
+}
+
 @media screen and (max-width: 500px) {
   header {
     padding-top: 5px;
     padding-bottom: 350px;
   }
+  #myCarousel{
+    height: 100px;
+  }
   .inferior {
-  bottom: 40px;
+    bottom: 40px;
   }
   .carousel-inner1 {
-  height: 680px;
+    height: 680px;
+  }
+  .header_img1{
+    background-image: url("../../assets/imagenes/consultoria/complementariaB_.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 305px;
+    display: block;
+    *background-image: url("../../assets/imagenes/favicon.png");
+  }
+  .header_img2{
+    background-image: url("../../assets/imagenes/consultoria/complementariaI.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 100%;
+    height: 305px;
+    display: block;
+    *background-image: url("../../assets/imagenes/favicon.png");
+  }
+
 }
-}
+
 @media screen and (max-width: 990px) {
   .logo_nav {
     background-image: url("../../assets/imagenes/logo_mini2.SVG");
@@ -923,7 +967,7 @@ button, input, optgroup, select, textarea {
 }
 @media screen and (max-width: 1000px) {
   .navbar-default {
-	background-image: url("../../assets/imagenes/nav_bg_media.png");
+  background-image: url("../../assets/imagenes/nav_bg_media.png");
   }
   /*navbar-collapse collapse in*/
   .navbar-fixed-top .navbar-collapse, .navbar-fixed-bottom .navbar-collapse {
